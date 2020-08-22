@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My webpage</title>
+    <style>
+      body {
+        background-color: Olive;
+        color: White;
+      }
+    </style>
+  </head>
+  <body>
+    <div ng-app="">
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+      <script>
+        var app = angular.module("commentApp", []);
+        app.controller("commentSection", function($scope) {
+          $scope.comment = [];
+        });
+      </script>
+      <h1>GitHub showoff</h1>
+      <!-- Comment area -->
+    </div>
+  </body>
+</html>
